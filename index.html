@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بروفايل شخصي</title>
+
+  <!-- خط عربي -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- أيقونات Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- ملف CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- رأس الصفحة -->
+  <header class="hero">
+    <div class="hero-inner">
+      <!-- صورة البروفايل -->
+      <div class="avatar">
+        <img src="https://m.media-amazon.com/images/I/71nm5jr12aL._AC_SL1500_.jpg" alt="صورة شخصية" />
+      </div>
+
+      <!-- الاسم والوظيفة -->
+      <h1 class="name">Imperator</h1>
+      <p class="title">Web Developer</p>
+
+      <!-- أيقونات التواصل -->
+      <div class="social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="container">
+    <!-- عني -->
+    <section class="card">
+      <h2>عنّي</h2>
+      <p>اكتب نبذة بسيطة عن نفسك هنا...</p>
+    </section>
+
+    <!-- المهارات -->
+    <section class="card">
+      <h2>المهارات</h2>
+      <ul class="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- التواصل -->
+    <section class="card">
+      <h2>تواصل معي</h2>
+      <p>
+        Email: <a href="mailto:imperator@Gmail.com">example@email.com</a>
+        &nbsp;&nbsp; Phone: 0123456789
+      </p>
+    </section>
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© <span id="year"></span>My simple Profile</p>
+  </footer>
+
+  <!-- سكربت تحديث السنة -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
